@@ -10,6 +10,7 @@ body {
     background: linear-gradient(blue, rgb(255, 192, 249));
     background-attachment: fixed;
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -53,6 +54,7 @@ button {
     height: 56px ;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 button img {
