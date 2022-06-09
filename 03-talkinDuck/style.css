@@ -57,6 +57,14 @@ button {
     cursor: pointer;
 }
 
+button:disabled {
+    opacity: 0.5;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
 button img {
     vertical-align: middle;
 }
@@ -68,6 +76,7 @@ button img {
 .pich-cotrols input {
     width: 100%;
     margin-top: 20px;
+    accent-color: white;
 }
 
 .animated-duck {

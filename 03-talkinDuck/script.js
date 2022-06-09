@@ -21,4 +21,19 @@ function talk() {
     utterance.rate = 1;
     utterance.pitch = pitch;
     speechSynthesis.speak(utterance);
+
+    utterance.addEventListener('start', function () {
+        textArea.disabled = true;
+        pitchBar.disabled = true;
+        playButton.disabled = true;
+
+        duckFigure.classList.add('talking');
+    });
+
+    utterance.addEventListener('end', function () {
+        duckFigure.classList.remove('talking');
+        textArea.disabled = false;
+        pitchBar.disabled = false;
+        playButton.disabled = false;
+    });
 }
