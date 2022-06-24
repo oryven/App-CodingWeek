@@ -29,7 +29,6 @@ function onResult(event) {
 
     screen.classList.add(actionClassname);
 
-   
 
     setTimeout(function() {
         screen.classList.remove(actionClassname);
