@@ -6,6 +6,6 @@
       "type": "image/png",
       "sizes": "192x192"
     }],
-    "theme_color": "#f71469",
+    "theme_color": "#3535EC",
     "display": "fullscreen"
   }
