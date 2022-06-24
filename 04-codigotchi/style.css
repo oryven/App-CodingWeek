@@ -86,21 +86,30 @@ header img {
     padding: 18px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
+    transition: transform 0.2s;
 }
 
 .panel-commands {
     position: absolute;
     top:0;
     left:0;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    transform: scale(0);
 }
 
 .listening .panel-microphone {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    transform: scale(0);
+
 }
 
 .listening .panel-commands {
-    display: block;
+    visibility: visible;
+    transform: scale(1);
+
+    /* display: block; */
 }
 
 h4 {

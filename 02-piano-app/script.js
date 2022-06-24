@@ -2,6 +2,14 @@ console.log('ciao');
 
 const keyElements = document.querySelectorAll('.key');
 
+let evento;
+
+if ('ontouchend' in document.documentElement) {
+    evento = 'touchend';
+}else {
+    evento = 'click'
+}
+
 const notes = {
     do: '01-do.mp3',
     dodiesis: '02-dodiesis.mp3',
@@ -26,7 +34,7 @@ function playSoud(key) {
 }
 
 keyElements.forEach(function (keyElement) {
-    keyElement.addEventListener('touchend', function () {
+    keyElement.addEventListener(evento, function () {
         const key = keyElement.id;
         playSoud(key)
     } );

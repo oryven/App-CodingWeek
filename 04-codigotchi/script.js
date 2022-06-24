@@ -29,11 +29,16 @@ function onResult(event) {
 
     screen.classList.add(actionClassname);
 
-    panelData.classList.remove('listening');
+   
 
     setTimeout(function() {
         screen.classList.remove(actionClassname);
     }, 2000);
+
+    setTimeout(function() {
+        panelData.classList.remove('listening');
+    }, 2000);
+   
 }
 
 mic.addEventListener('click', onStart);
